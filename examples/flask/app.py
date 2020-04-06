@@ -1,10 +1,18 @@
 from flask import Flask
 APP = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def get_health():
+    return 'Healthy'
 
-@APP.route('/')
-def hello_world():
-    return 'Hello, World from Flask!\n'
+@app.route('/auth', methods['POST'])
+def get_jwt(email, password):
+    # encryot based off of email, password combination
+    return 'Success'
+
+@app.route('/contents', methods['GET'])
+def decrypt_jwt(jwt):
+    #based off of jwt being a valid JWT
 
 
 
