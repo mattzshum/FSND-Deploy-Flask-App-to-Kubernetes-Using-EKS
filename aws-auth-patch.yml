@@ -16,6 +16,3 @@ metadata:
   resourceVersion: "921"
   selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
   uid: afead2ec-7c5f-11ea-a87a-0a13265af4ee
-env:
-  parameter-store:
-    JWT_SECRET: JWT_SECRET
