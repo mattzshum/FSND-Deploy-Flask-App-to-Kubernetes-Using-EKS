@@ -7,9 +7,9 @@ data:
       rolearn: arn:aws:iam::610952542558:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-CATAYSXMLEO9
       username: system:node:{{EC2PrivateDNSName}}
     - groups:
-      - system:masters
-      rolearn: arn:aws:iam::610952542558:role/UdacityFlaskDeployCBKubectlRole
-      username: perfect
+      - system: masters
+        rolearn: arn:aws:iam::610952542558:role/UdacityFlaskDeployCBKubectlRole
+        username: build
   mapUsers: |
     []
 kind: ConfigMap
