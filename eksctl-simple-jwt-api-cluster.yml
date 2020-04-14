@@ -27,10 +27,10 @@ spec:
   template:
     metadata:
       labels:
-        app: simple-jwt-api
+        app: eksctl-simple-jwt-api-cluster
     spec:
       containers:
-        - name: simple-jwt-api
+        - name: eksctl-simple-jwt-api-cluster
           image: CONTAINER_IMAGE
           securityContext:
             privileged: false
