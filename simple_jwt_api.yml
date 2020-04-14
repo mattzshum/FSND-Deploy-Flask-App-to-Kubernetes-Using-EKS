@@ -13,7 +13,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simple-jwt-api
+  name: eksctl-simple-jwt-api-cluster
 spec:
   replicas: 3
   strategy:
