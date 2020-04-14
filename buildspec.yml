@@ -33,7 +33,7 @@ phases:
       - export AWS_SESSION_TOKEN="$(echo ${CREDENTIALS} | jq -r '.Credentials.SessionToken')"
       - export AWS_EXPIRATION=$(echo ${CREDENTIALS} | jq -r '.Credentials.Expiration')
       - mkdir -p $HOME/ .kube
-      - sudo cp -i /etc/kubernetes/admin.conf $HOME/ .kube/config
+      - sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
       - sudo chown $(id -u):$(id -g) $HOME/ .kube/config
       - aws eks update-kubeconfig --name $EKS_CLUSTER_NAME
       - kubectl apply -f eksctl-simple-jwt-api-cluster.yml
