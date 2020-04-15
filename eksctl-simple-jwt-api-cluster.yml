@@ -5,7 +5,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - port: 50
+    - port: 80
       targetPort: 5000
   selector:
     app: eksctl-simple-jwt-api-cluster
