@@ -6,6 +6,6 @@ WORKDIR /app
 
 RUN pip install -r requirements.txt
 
-EXPOSE 5000
+EXPOSE 8080
 
-ENTRYPOINT ["gunicorn", "--bind", "0.0.0.0:5000", "main:APP"]
+ENTRYPOINT ["gunicorn", "--bind", "0.0.0.0:8080", "main:APP"]
